@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Five</title>
+    <!--- Tailwind CSS and daisyUI CDN --->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--- Font Family CDN --->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .roboto {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="roboto">
+    <header>
+      <nav class="bg-[#f5f1e8]">
+
+         <!--- Log mobile responsive --->
+         <div class=" lg:hidden flex items-center container mx-auto px-6 pt-5">
+          <img class="mr-2 w-7 h-7 " src="assets/logo.png" alt="Logo" />
+          <span class="font-bold text-base pt-2">Donate Bangladesh</span>
+      </div>
+
+        <div
+          class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 flex justify-between items-center"
+        >
+          <!--- Blog Button --->
+          <button
+            class="px-6 mb-5 py-2 rounded-md bg-lime-400 text-black font-bold"
+          >
+            <a href="blog.html">Blog</a>
+          </button>
+          <!--- Log --->
+          <div class="hidden lg:flex items-center">
+            <img class="mr-3 w-1/5 h-1/45" src="assets/logo.png" alt="Logo" />
+            <span class="font-bold text-lg">Donate Bangladesh</span>
+        </div>
+           
+        <!--- $ Coin --->
+        <div class="flex items-center">
+          <img src="assets/coin.png" alt="$ coin" class="mr-2">
+          <span class="font-bold text-lg">5500 BDT</span>
+      </nav>
+      <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12">
+        <div class="flex justify-center space-x-4">
+          <!--- Donation Button --->
+          <button class="btn bg-lime-300 hover:bg-lime-400 text-black">Donation</button>
+          
+          <!--- History Button --->
+          <button class="btn bg-gray-200 hover:bg-gray-300 text-black">History</button>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12">
+       <!--- Card-1 --->
+       <div class="lg:flex justify-evenly border-2 lg:mx-32 border-r-gray-300 rounded-xl lg:py-10 space-y-2 px-3 py-3">
+         <!--- Img --->
+         <div>
+          <img src="assets/noakhali.png" alt="">
+        </div>
+        <!--- Text and $ Coin  --->
+        <div class=" lg:w-[522px] space-y-5">
+           <!--- $ Coin --->
+          <button class="px-1 py-2 bg-gray-300 flex items-center space-x-1 rounded-md">
+              <img class="w-6 h-6" src="assets/coin.png" alt="coin">
+              <span class="font-bold text-[#111111B3]">0 BDT</span>
+            </button>
+            <!--- Text --->
+            <h2 class="text-[#111111] font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h2>
+            <p class="text-base text-[#494949]">The infrastructure and dwellings in Noakhali have suffered serious damage as a result of the recent floods. Your contribution will assist in helping individuals impacted by this tragedy by providing necessary necessities. All contributions, regardless of size, have an impact. Please help us by contributing to the relief efforts and improving the lives of people who are less fortunate.</p>
+
+            <!--- input file --->
+            <input 
+            type="text"
+            placeholder="Write Donation Amount"
+            class="input input-bordered input-md w-full" />
+
+            <!--- Donate Now --->
+            <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 re bg-[#B4F461]">Donate Now</button>
+        </div>
+       </div>
+      </section>
+    </main>
+  </body>
+</html>
