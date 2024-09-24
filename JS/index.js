@@ -24,6 +24,21 @@ document.getElementById("btnOne").addEventListener("click", function (event) {
   const finalBalance = inputOne + totalBalance;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
 
+  // Add the History
+  const historyItem = document.createElement("div");
+  historyItem.className =
+    "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
+
+  historyItem.innerHTML = `
+    <h2 class= "text-2xl font-semibold">${inputOne} Taka is Donate for Flood at Noakhali, Bangladesh</h2> 
+    
+    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    Time: ${new Date().toLocaleTimeString()}, 
+    Country: Bangladesh</p>
+   `;
+  //Should be a common function
+  document.getElementById("historySection").appendChild(historyItem);
+
   // Show successful donation
   document.getElementById("congrats").classList.remove("hidden");
 });
@@ -59,6 +74,21 @@ document.getElementById("btnTwo").addEventListener("click", function (event) {
   const finalBalance = inputTwo + totalBalance;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
 
+  // Add the History
+  const historyItem = document.createElement("div");
+  historyItem.className =
+    "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
+
+  historyItem.innerHTML = `
+    <h2 class= "text-2xl font-semibold">${inputTwo} Taka is Donate for Flood Relief in Feni,Bangladesh</h2> 
+    
+    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    Time: ${new Date().toLocaleTimeString()}, 
+    Country: Bangladesh</p>
+   `;
+  //Should be a Common function
+  document.getElementById("historySection").appendChild(historyItem);
+
   // Show successful donation
   document.getElementById("congrats").classList.remove("hidden");
 });
@@ -93,6 +123,21 @@ document.getElementById("btnThree").addEventListener("click", function (event) {
 
   const finalBalance = inputThree + totalBalance;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
+
+  // Add the History
+  const historyItem = document.createElement("div");
+  historyItem.className =
+    "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
+
+  historyItem.innerHTML = `
+    <h2 class= "text-2xl font-semibold">${inputThree} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2> 
+    
+    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    Time: ${new Date().toLocaleTimeString()}, 
+    Country: Bangladesh</p>
+   `;
+  //Should be a common function
+  document.getElementById("historySection").appendChild(historyItem);
 
   // Show successful donation
   document.getElementById("congrats").classList.remove("hidden");
