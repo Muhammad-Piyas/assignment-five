@@ -11,3 +11,12 @@ function getTextFieldValueById(id) {
   const textNumber = parseFloat(textValue);
   return textNumber;
 }
+
+// Show And Hidden Section
+function showSectionBy(id) {
+  //Hidden all the Section
+  document.getElementById("donationSection").classList.add("hidden");
+  document.getElementById("historySection").classList.add("hidden");
+  //Show the Section
+  document.getElementById(id).classList.remove("hidden");
+}
