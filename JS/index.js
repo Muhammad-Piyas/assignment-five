@@ -30,9 +30,9 @@ document.getElementById("btnOne").addEventListener("click", function (event) {
     "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
 
   historyItem.innerHTML = `
-    <h2 class= "text-2xl font-semibold">${inputOne} Taka is Donate for Flood at Noakhali, Bangladesh</h2> 
+    <h2 class= "text-lg lg:text-2xl font-medium lg:font-semibold">${inputOne} Taka is Donate for Flood at Noakhali, Bangladesh</h2> 
     
-    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    <p class= "text-xs lg:text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
     Time: ${new Date().toLocaleTimeString()}, 
     Country: Bangladesh</p>
    `;
@@ -80,9 +80,9 @@ document.getElementById("btnTwo").addEventListener("click", function (event) {
     "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
 
   historyItem.innerHTML = `
-    <h2 class= "text-2xl font-semibold">${inputTwo} Taka is Donate for Flood Relief in Feni,Bangladesh</h2> 
+    <h2 class= "text-lg lg:text-2xl font-medium lg:font-semibold">${inputTwo} Taka is Donate for Flood Relief in Feni,Bangladesh</h2> 
     
-    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    <p class= "text-xs lg:text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
     Time: ${new Date().toLocaleTimeString()}, 
     Country: Bangladesh</p>
    `;
@@ -130,9 +130,9 @@ document.getElementById("btnThree").addEventListener("click", function (event) {
     "text-start px-3 py-4 border-2 border-r-gray-300 rounded-lg";
 
   historyItem.innerHTML = `
-    <h2 class= "text-2xl font-semibold">${inputThree} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2> 
+    <h2 class= "text-lg lg:text-2xl font-medium lg:font-semibold">${inputThree} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h2> 
     
-    <p class= "text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
+    <p class= "text-xs lg:text-base text-gray-400">Date: ${new Date().toLocaleDateString()}, 
     Time: ${new Date().toLocaleTimeString()}, 
     Country: Bangladesh</p>
    `;
