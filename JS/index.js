@@ -21,7 +21,7 @@ document.getElementById("btnOne").addEventListener("click", function (event) {
   const firstBalance = inputOne + balanceOne;
   document.getElementById("balanceOne").innerText = firstBalance.toFixed(2);
 
-  const finalBalance = inputOne + totalBalance;
+  const finalBalance = totalBalance - inputOne;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
 
   // Add the History
@@ -71,7 +71,7 @@ document.getElementById("btnTwo").addEventListener("click", function (event) {
   const firstBalance = inputTwo + balanceTwo;
   document.getElementById("balanceTwo").innerText = firstBalance.toFixed(2);
 
-  const finalBalance = inputTwo + totalBalance;
+  const finalBalance = totalBalance - inputTwo;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
 
   // Add the History
@@ -121,7 +121,7 @@ document.getElementById("btnThree").addEventListener("click", function (event) {
   const firstBalance = inputThree + balanceThree;
   document.getElementById("balanceThree").innerText = firstBalance.toFixed(2);
 
-  const finalBalance = inputThree + totalBalance;
+  const finalBalance = totalBalance - inputThree;
   document.getElementById("totalBalance").innerText = finalBalance.toFixed(2);
 
   // Add the History
