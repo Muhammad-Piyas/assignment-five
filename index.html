@@ -59,10 +59,10 @@
       <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12">
         <div class="flex justify-center space-x-4">
           <!--- Donation Button --->
-          <button class="btn bg-lime-300 hover:bg-lime-400 text-black">Donation</button>
+          <button id="donationBtn" class="btn bg-lime-300 hover:bg-lime-400 text-black">Donation</button>
           
           <!--- History Button --->
-          <button class="btn bg-gray-200 hover:bg-gray-300 text-black">History</button>
+          <button id="historyBtn" class="btn bg-gray-200 hover:bg-gray-300 text-black">History</button>
         </div>
       </section>
     </header>
@@ -84,7 +84,7 @@
       </section>  
 
       <!--- Donation Section --->
-      <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 space-y-6">
+      <section id="donationSection" class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 space-y-6">
        <!--- Card-1 --->
        <div class="lg:flex justify-evenly border-2 lg:mx-32 border-r-gray-300 rounded-xl lg:py-10 space-y-2 px-3 py-3">
          <!--- Img --->
@@ -172,8 +172,10 @@
       </section>
 
       <!--- History Section --->
-      <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 hidden">
-        
+      <section id="historySection" class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 hidden">
+        <div>
+          <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt aspernatur suscipit labore accusamus sit quibusdam illum, qui nulla quaerat ipsum reiciendis omnis vitae harum debitis dicta vel minima quam tempora!</p>
+        </div>
       </section>
     </main>
     <footer class="bg-[#F9F7F3] mt-4 lg:mt-8 w-full lg:h-32 h-52">
@@ -181,5 +183,7 @@
     </footer>
     <script src="JS/utlities.js"></script>
     <script src="JS/index.js"></script>
+    <script src="JS/btn.js"></script>
+    <script src="JS/features.js"></script>
   </body>
 </html>
