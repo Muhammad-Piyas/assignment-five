@@ -8,6 +8,9 @@ document.getElementById("btnOne").addEventListener("click", function (event) {
   const balanceOne = getTextFieldValueById("balanceOne");
   const totalBalance = getTextFieldValueById("totalBalance");
 
+  // Clear the input field
+  document.getElementById("inputOne").value = "";
+
   // Validate donation amount
   if (inputOne <= 0 || isNaN(inputOne)) {
     alert("Invalid Donation Amount");
@@ -40,6 +43,9 @@ document.getElementById("btnTwo").addEventListener("click", function (event) {
   const balanceTwo = getTextFieldValueById("balanceTwo");
   const totalBalance = getTextFieldValueById("totalBalance");
 
+  // Clear the input field
+  document.getElementById("inputTwo").value = "";
+
   // Validate donation amount
   if (inputTwo <= 0 || isNaN(inputTwo)) {
     alert("Invalid Donation Amount");
@@ -71,6 +77,9 @@ document.getElementById("btnThree").addEventListener("click", function (event) {
   const inputThree = getInputFieldValueById("inputThree");
   const balanceThree = getTextFieldValueById("balanceThree");
   const totalBalance = getTextFieldValueById("totalBalance");
+
+  // Clear the input field
+  document.getElementById("inputThree").value = "";
 
   // Validate donation amount
   if (inputThree <= 0 || isNaN(inputThree)) {
