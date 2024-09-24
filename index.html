@@ -41,7 +41,7 @@
         >
           <!--- Blog Button --->
           <button
-            class="px-6 mb-5 py-2 rounded-md bg-lime-400 text-black font-bold"
+            class="px-6 mb-5 py-2 rounded-md btn bg-lime-300 hover:bg-lime-400  text-black font-bold"
           >
             <a href="blog.html">Blog</a>
           </button>
@@ -54,7 +54,7 @@
         <!--- $ Coin --->
         <div class="flex items-center">
           <img src="assets/coin.png" alt="$ coin" class="mr-2">
-          <span class="font-bold text-lg">5500 BDT</span>
+          <p class="font-bold text-lg"><span id="totalBalance">5500</span> BDT</p>
       </nav>
       <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12">
         <div class="flex justify-center space-x-4">
@@ -96,20 +96,20 @@
            <!--- $ Coin --->
           <button class="px-1 py-2 bg-gray-300 flex items-center space-x-1 rounded-md">
               <img class="w-6 h-6" src="assets/coin.png" alt="coin">
-              <span class="font-bold text-[#111111B3]">700 BDT</span>
+              <p class="font-bold text-[#111111B3]"><span id="balanceOne">700</span> BDT</p>
             </button>
             <!--- Text --->
             <h2 class="text-[#111111] font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h2>
             <p class="text-base text-[#494949]">The infrastructure and dwellings in Noakhali have suffered serious damage as a result of the recent floods. Your contribution will assist in helping individuals impacted by this tragedy by providing necessary necessities. All contributions, regardless of size, have an impact. Please help us by contributing to the relief efforts and improving the lives of people who are less fortunate.</p>
 
             <!--- input file --->
-            <input 
+            <input id="inputOne"
             type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered input-md w-full" />
 
             <!--- Donate Now --->
-            <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 re bg-[#B4F461]">Donate Now</button>
+            <button id="btnOne" class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 btn bg-lime-300 hover:bg-lime-400 ">Donate Now</button>
         </div>
        </div>
 
@@ -124,7 +124,7 @@
             <!--- $ Coin --->
            <button class="px-1 py-2 bg-gray-300 flex items-center space-x-1 rounded-md">
                <img class="w-6 h-6" src="assets/coin.png" alt="coin">
-               <span class="font-bold text-[#111111B3]">600 BDT</span>
+               <p class="font-bold text-[#111111B3]"><span>600</span> BDT</p>
              </button>
              <!--- Text --->
              <h2 class="text-[#111111] font-bold text-2xl">Donate for Flood Relief in Feni,Bangladesh</h2>
@@ -138,7 +138,7 @@
              class="input input-bordered input-md w-full" />
  
              <!--- Donate Now --->
-             <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 re bg-[#B4F461]">Donate Now</button>
+             <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 btn bg-lime-300 hover:bg-lime-400 ">Donate Now</button>
          </div>
         </div>
 
@@ -153,7 +153,7 @@
           <!--- $ Coin --->
          <button class="px-1 py-2 bg-gray-300 flex items-center space-x-1 rounded-md">
              <img class="w-6 h-6" src="assets/coin.png" alt="coin">
-             <span class="font-bold text-[#111111B3]">500 BDT</span>
+             <p class="font-bold text-[#111111B3]"><span>500</span> BDT</p>
            </button>
            <!--- Text --->
            <h2 class="text-[#111111] font-bold text-2xl">Aid for Injured in the Quota Movement</h2>
@@ -166,21 +166,20 @@
            class="input input-bordered input-md w-full" />
 
            <!--- Donate Now --->
-           <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 re bg-[#B4F461]">Donate Now</button>
+           <button class=" text-[#111111] font-bold w-full rounded-lg py-2 lg:px-2 lg:py-3 btn bg-lime-300 hover:bg-lime-400">Donate Now</button>
        </div>
       </div>
       </section>
 
       <!--- History Section --->
-      <section>
-        <!-- Fast Card-1 -->
-        <div class="">
-          
-        </div>
+      <section class="container mx-auto px-6 pt-5 pb-3 lg:px-12 lg:pt-12 hidden">
+        
       </section>
     </main>
     <footer class="bg-[#F9F7F3] mt-4 lg:mt-8 w-full lg:h-32 h-52">
 
     </footer>
+    <script src="JS/utlities.js"></script>
+    <script src="JS/index.js"></script>
   </body>
 </html>
